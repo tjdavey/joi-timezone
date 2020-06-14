@@ -6,11 +6,10 @@
     "joi",
     "extension",
     "timezone",
-    "checksum",
+    "tz",
     "validation",
     "validator",
-    "moment",
-    "mcfly-timezone"
+    "moment"
   ],
   "main": "lib/index.js",
   "repository": {
@@ -26,19 +25,20 @@
     "clean": "rm -rf node_modules/ && rm -rf coverage",
     "posttest": "npm run lint"
   },
-  "author": "SafetyCulture Pty Ltd <info@safetyculture.com> (http://www.safetyculture.com)",
+  "author": "Tristan Davey <tristan@tristandavey.com>",
   "constributors": [
-    "Jason Jacob <jason.jacob@safetyculture.com>"
+    "Jason Jacob <jason.jacob@safetyculture.com>",
+    "Tristan Davey <tristan@tristandavey.com>"
   ],
   "license": "Apache-2.0",
   "dependencies": {
     "moment-timezone": "^0.5.13"
   },
   "peerDependencies": {
-    "@hapi/joi": ">=15.0.3"
+    "@hapi/joi": ">=16.1.8"
   },
   "devDependencies": {
-    "@hapi/joi": "^15.0.3",
+    "@hapi/joi": "^16.1.8",
     "chai": "^4.1.0",
     "coveralls": "^3.0.3",
     "eslint": "^5.16.0",
@@ -47,6 +47,6 @@
     "eslint-plugin-jsx-a11y": "^5.1.1",
     "eslint-plugin-react": "^7.1.0",
     "istanbul": "^1.0.0-alpha.2",
-    "mocha": "^6.1.4"
+    "mocha": "^6.2.3"
   }
 }
