@@ -15,7 +15,7 @@ Note: **requires** Joi version >= 16
 
 ```js
 import BaseJoi from 'joi';
-import JoiTimezone from 'joi-timezone';
+import JoiTimezone from 'joi-tz';
 
 const Joi = BaseJoi.extend(JoiTimezone);
 
