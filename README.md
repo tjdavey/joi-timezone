@@ -1,7 +1,7 @@
 # joi-tz
 
-[![Build Status](https://travis-ci.org/SafetyCulture/joi-timezone.svg?branch=master)](https://travis-ci.org/SafetyCulture/joi-timezone)
-[![Coverage Status](https://coveralls.io/repos/github/SafetyCulture/joi-timezone/badge.svg)](https://coveralls.io/github/SafetyCulture/joi-timezone)
+[![Build Status](https://travis-ci.org/tjdavey/joi-tz.svg?branch=master)](https://travis-ci.org/tjdavey/joi-tz)
+[![Coverage Status](https://coveralls.io/repos/github/tjdavey/joi-tz/badge.svg)](https://coveralls.io/github/tjdavey/joi-tz)
 
 Provides a Joi rule to validate IANA timezone strings using moment-timezone. 
 
