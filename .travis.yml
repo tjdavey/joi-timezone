@@ -1,7 +1,7 @@
 language: node_js
 script:
   - npm test
-  - npm run cov:coveralls
+  - npm run cov:tests && npm run cov:coveralls
 node_js:
   - "8"
   - "10"

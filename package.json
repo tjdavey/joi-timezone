@@ -18,9 +18,10 @@
   },
   "scripts": {
     "test": "NODE_ENV=test mocha --recursive",
-    "cov": "npm run cov",
-    "cov:html": "NODE_ENV=test COVERAGE=yes LOG_LEVEL=fatal istanbul cover --report html ./node_modules/.bin/_mocha -- --recursive && open coverage/index.html",
-    "cov:coveralls": "NODE_ENV=test COVERAGE=yes LOG_LEVEL=fatal istanbul cover --report lcovonly ./node_modules/.bin/_mocha -- --recursive && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "cov": "npm run cov:tests && npm run cov:html",
+    "cov:tests": "NODE_ENV=test COVERAGE=yes LOG_LEVEL=fatal nyc npm run test",
+    "cov:html": "nyc report --reporter=html && open coverage/index.html",
+    "cov:coveralls": "nyc report --reporter=text-lcov | ./node_modules/coveralls/bin/coveralls.js",
     "lint": "eslint ./lib/ ./test/ && echo Lint OK",
     "clean": "rm -rf node_modules/ && rm -rf coverage",
     "posttest": "npm run lint"
@@ -40,13 +41,14 @@
   "devDependencies": {
     "@hapi/joi": "^16.1.8",
     "chai": "^4.1.0",
-    "coveralls": "^3.0.3",
-    "eslint": "^5.16.0",
-    "eslint-config-airbnb": "^15.1.0",
-    "eslint-plugin-import": "^2.17.2",
-    "eslint-plugin-jsx-a11y": "^5.1.1",
-    "eslint-plugin-react": "^7.1.0",
-    "istanbul": "^1.0.0-alpha.2",
-    "mocha": "^6.2.3"
+    "coveralls": "^3.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^2.5.0",
+    "mocha": "^6.2.3",
+    "nyc": "^15.1.0"
   }
 }
