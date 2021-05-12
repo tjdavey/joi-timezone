@@ -19,7 +19,7 @@
   "scripts": {
     "test": "tav",
     "cov": "npm run cov:tests && npm run cov:html",
-    "cov:tests": "NODE_ENV=test COVERAGE=yes LOG_LEVEL=fatal nyc npm run test",
+    "cov:tests": "NODE_ENV=test COVERAGE=yes LOG_LEVEL=fatal nyc mocha --recursive",
     "cov:html": "nyc report --reporter=html && open coverage/index.html",
     "cov:coveralls": "nyc report --reporter=text-lcov | ./node_modules/coveralls/bin/coveralls.js",
     "lint": "eslint ./lib/ ./test/ && echo Lint OK",
