@@ -4,6 +4,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/tjdavey/joi-tz/badge.svg)](https://coveralls.io/github/tjdavey/joi-tz)
 [![Known Vulnerabilities](https://snyk.io/test/github/tjdavey/joi-tz/badge.svg?targetFile=package.json)](https://snyk.io/test/github/tjdavey/joi-tz?targetFile=package.json)
 [![npm version](https://badge.fury.io/js/joi-tz.svg)](https://badge.fury.io/js/joi-tz)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Ftjdavey%2Fjoi-tz.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Ftjdavey%2Fjoi-tz?ref=badge_shield)
 
 Provides a Joi rule to validate IANA timezone strings (eg. `Europe/London`, `America/New_York`, `Etc/GMT-8`) using [moment-timezone](https://momentjs.com/timezone/). 
 
@@ -59,3 +60,6 @@ This library is tested for compatibility, and contains peer dependencies with th
 |---------------------------------------------------------------|----------------|----------|----------|
 | [4.1.0](https://github.com/tjdavey/joi-tz/releases/tag/v4.1.0) |                | ✅        | ✅        |
 | [4.0.2](https://github.com/tjdavey/joi-tz/releases/tag/v4.0.2) | ✅              |          |          |
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Ftjdavey%2Fjoi-tz.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Ftjdavey%2Fjoi-tz?ref=badge_large)
