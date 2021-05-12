@@ -1,4 +1,4 @@
-const BaseJoi = require('@hapi/joi');
+const BaseJoi = require('joi');
 const {assert} = require('chai');
 const JoiTimezone = require('../lib');
 

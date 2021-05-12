@@ -1,0 +1,3 @@
+joi:
+  versions: ">=16.1.8"
+  commands: NODE_ENV=test mocha --recursive
