@@ -8,7 +8,7 @@
 
 Provides a Joi rule to validate IANA timezone strings (eg. `Europe/London`, `America/New_York`, `Etc/GMT-8`) using [moment-timezone](https://momentjs.com/timezone/). 
 
-Joi-tz only supports Joi 16.x or higher.
+Joi-tz supports and is tested against Joi 16.x or higher.
 
 This project is forked from [joi-timezone](https://www.npmjs.com/package/joi-timezone) (unmaintained). That project remains functional for Joi 9.x-15.x.
 
@@ -51,6 +51,15 @@ Joi.timezone().returnMoment().validate('America/Los_Angeles');
 */
 ```
 
+## Compatibility
+
+This library is tested for compatibility, and contains peer dependencies with the following versions. 
+
+
+| Version                                                       | @hapi/joi 16.x | joi 16.x | joi 17.x |
+|---------------------------------------------------------------|----------------|----------|----------|
+| [4.1.0](https://github.com/tjdavey/joi-tz/releases/tag/v4.1.0) |                | ✅        | ✅        |
+| [4.0.2](https://github.com/tjdavey/joi-tz/releases/tag/v4.0.2) | ✅              |          |          |
 
 ## License
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Ftjdavey%2Fjoi-tz.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Ftjdavey%2Fjoi-tz?ref=badge_large)
