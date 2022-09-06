@@ -3,8 +3,6 @@ script:
   - npm test
   - npm run cov:tests && npm run cov:coveralls
 node_js:
-  - "10"
-  - "12"
   - "14"
   - "16"
   - "18"
