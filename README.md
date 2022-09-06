@@ -56,8 +56,9 @@ Joi.timezone().returnMoment().validate('America/Los_Angeles');
 This library is tested for compatibility, and contains peer dependencies with the following versions. 
 
 
-| Version                                                       | @hapi/joi 16.x | joi 16.x | joi 17.x |
-|---------------------------------------------------------------|----------------|----------|----------|
+| Version                                                        | @hapi/joi 16.x | joi 16.x | joi 17.x |
+|----------------------------------------------------------------|----------------|----------|----------|
+| [4.1.1](https://github.com/tjdavey/joi-tz/releases/tag/v4.1.1) |                | ✅        | ✅        |
 | [4.1.0](https://github.com/tjdavey/joi-tz/releases/tag/v4.1.0) |                | ✅        | ✅        |
 | [4.0.2](https://github.com/tjdavey/joi-tz/releases/tag/v4.0.2) | ✅              |          |          |
 
