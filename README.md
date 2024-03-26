@@ -6,7 +6,7 @@
 [![npm version](https://badge.fury.io/js/joi-tz.svg)](https://badge.fury.io/js/joi-tz)
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Ftjdavey%2Fjoi-tz.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Ftjdavey%2Fjoi-tz?ref=badge_shield)
 
-Provides a Joi rule to validate IANA timezone strings (eg. `Europe/London`, `America/New_York`, `Etc/GMT-8`) using [moment-timezone](https://momentjs.com/timezone/). 
+Provides a Joi rule to validate IANA timezone strings (eg. `Europe/London`, `America/New_York`, `Etc/GMT-8`) using [luxon](https://moment.github.io/luxon). 
 
 Joi-tz supports and is tested against Joi 16.x or higher.
 
@@ -30,27 +30,6 @@ Joi.timezone().validate('Melbourne/Australia');
 // returns {error: null, value: 'Melbourne/Australia'}
 ```
 
-### Rules
-
-#### `returnMoment` - Convert to a moment zone object
-
-When added to the validation chain returns a [moment zone object](https://momentjs.com/timezone/docs/#/zone-object/) which contains useful metadata about the timezone. 
-
-```js
-Joi.timezone().returnMoment().validate('America/Los_Angeles');
-/*
-    returns {
-        error: null,
-        value: {
-            name    : 'America/Los_Angeles',
-            abbrs   : ['PDT', 'PST'],
-            untils  : [1414918800000, 1425808800000],
-            offsets : [420, 480]
-        }
-    }
-*/
-```
-
 ## Compatibility
 
 This library is tested for compatibility, and contains peer dependencies with the following versions. 
@@ -58,6 +37,7 @@ This library is tested for compatibility, and contains peer dependencies with th
 
 | Version                                                        | @hapi/joi 16.x | joi 16.x | joi 17.x |
 |----------------------------------------------------------------|----------------|----------|----------|
+| [5.0.0](https://github.com/tjdavey/joi-tz/releases/tag/v5.0.0) |                | ✅        | ✅        |
 | [4.1.1](https://github.com/tjdavey/joi-tz/releases/tag/v4.1.1) |                | ✅        | ✅        |
 | [4.1.0](https://github.com/tjdavey/joi-tz/releases/tag/v4.1.0) |                | ✅        | ✅        |
 | [4.0.2](https://github.com/tjdavey/joi-tz/releases/tag/v4.0.2) | ✅              |          |          |
