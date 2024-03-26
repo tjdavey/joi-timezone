@@ -21,9 +21,7 @@
   },
   "scripts": {
     "test": "tav",
-    "cov": "npm run cov:tests",
-    "cov:tests": "jest --coverage",
-    "cov:coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls",
+    "coverage": "jest --coverage",
     "lint": "eslint .",
     "clean": "rm -rf node_modules/ && rm -rf coverage",
     "posttest": "npm run lint"
