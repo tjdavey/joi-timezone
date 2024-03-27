@@ -1,6 +1,6 @@
 {
   "name": "joi-tz",
-  "version": "4.1.1",
+  "version": "5.0.0",
   "description": "Timezone string validation for Joi 16.x or higher.",
   "keywords": [
     "joi",
@@ -9,20 +9,20 @@
     "tz",
     "validation",
     "validator",
-    "moment"
+    "luxor"
   ],
-  "main": "lib/index.js",
+  "exports": ["./lib/index.js"],
+  "files": [
+    "lib"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/tjdavey/joi-tz.git"
   },
   "scripts": {
     "test": "tav",
-    "cov": "npm run cov:tests && npm run cov:html",
-    "cov:tests": "NODE_ENV=test COVERAGE=yes LOG_LEVEL=fatal nyc mocha --recursive",
-    "cov:html": "nyc report --reporter=html && open coverage/index.html",
-    "cov:coveralls": "nyc report --reporter=text-lcov | ./node_modules/coveralls/bin/coveralls.js",
-    "lint": "eslint ./lib/ ./test/ && echo Lint OK",
+    "coverage": "jest --coverage",
+    "lint": "eslint .",
     "clean": "rm -rf node_modules/ && rm -rf coverage",
     "posttest": "npm run lint"
   },
@@ -33,22 +33,20 @@
   ],
   "license": "Apache-2.0",
   "dependencies": {
-    "moment-timezone": "^0.5.33"
+    "luxon": "^3.4.4"
   },
   "peerDependencies": {
     "joi": ">=16.1.8"
   },
   "devDependencies": {
-    "chai": "^4.3.4",
     "coveralls": "^3.1.0",
-    "eslint": "^7.26.0",
-    "eslint-config-airbnb": "^18.2.1",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-react": "^7.23.2",
-    "eslint-plugin-react-hooks": "^4.2.0",
-    "mocha": "^10.0.0",
-    "nyc": "^15.1.0",
-    "test-all-versions": "^5.0.1"
+    "eslint": "^8.57.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jest": "^27.9.0",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-promise": "^6.1.1",
+    "jest": "^29.7.0",
+    "test-all-versions": "^6.1.0"
   }
 }
