@@ -27,8 +27,8 @@ import JoiTimezone from 'joi-tz';
 
 const Joi = BaseJoi.extend(JoiTimezone);
 
-Joi.timezone().validate('Melbourne/Darwin');
-// returns {value: 'Melbourne/Darwin'}
+Joi.timezone().validate('Australia/Darwin');
+// returns {value: 'Australia/Darwin'}
 ```
 
 ## Compatibility
