@@ -1,6 +1,6 @@
 {
   "name": "joi-tz",
-  "version": "5.0.0",
+  "version": "5.0.1",
   "description": "Timezone string validation for Joi 16.x or higher.",
   "keywords": [
     "joi",
@@ -35,7 +35,7 @@
   ],
   "license": "Apache-2.0",
   "dependencies": {
-    "luxon": "^3.4.4"
+    "luxon": "^3.5.0"
   },
   "peerDependencies": {
     "joi": ">=16.1.8"
