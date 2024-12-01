@@ -36,12 +36,13 @@ Joi.timezone().validate('Australia/Darwin');
 This library is tested for compatibility, and contains peer dependencies with the following versions. 
 
 
-| Version                                                        | @hapi/joi 16.x | joi 16.x | joi 17.x |
-|----------------------------------------------------------------|----------------|----------|----------|
-| [5.0.0](https://github.com/tjdavey/joi-tz/releases/tag/v5.0.0) |                | ✅        | ✅        |
-| [4.1.1](https://github.com/tjdavey/joi-tz/releases/tag/v4.1.1) |                | ✅        | ✅        |
-| [4.1.0](https://github.com/tjdavey/joi-tz/releases/tag/v4.1.0) |                | ✅        | ✅        |
-| [4.0.2](https://github.com/tjdavey/joi-tz/releases/tag/v4.0.2) | ✅              |          |          |
+| Version                                                        | @hapi/joi 16.x | joi 16.x | joi 17.x | Timezone Database                                       |
+|----------------------------------------------------------------|----------------|----------|----------|---------------------------------------------------------|
+| [5.0.1](https://github.com/tjdavey/joi-tz/releases/tag/v5.0.1) |                | ✅        | ✅        | [Luxon](https://moment.github.io/luxon) 3.5.x           |
+| [5.0.0](https://github.com/tjdavey/joi-tz/releases/tag/v5.0.0) |                | ✅        | ✅        | [Luxon](https://moment.github.io/luxon) 3.4.x           | 
+| [4.1.1](https://github.com/tjdavey/joi-tz/releases/tag/v4.1.1) |                | ✅        | ✅        | [Moment-Timezone](https://momentjs.com/timezone/) 0.5.x | 
+| [4.1.0](https://github.com/tjdavey/joi-tz/releases/tag/v4.1.0) |                | ✅        | ✅        | [Moment-Timezone](https://momentjs.com/timezone/) 0.5.x |
+| [4.0.2](https://github.com/tjdavey/joi-tz/releases/tag/v4.0.2) | ✅              |          |          | [Moment-Timezone](https://momentjs.com/timezone/) 0.5.x |
 
 ## License
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Ftjdavey%2Fjoi-tz.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Ftjdavey%2Fjoi-tz?ref=badge_large)
