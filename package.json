@@ -11,7 +11,9 @@
     "validator",
     "luxor"
   ],
-  "exports": ["./lib/index.js"],
+  "exports": [
+    "./lib/index.js"
+  ],
   "files": [
     "lib"
   ],
@@ -39,7 +41,7 @@
     "joi": ">=16.1.8"
   },
   "devDependencies": {
-    "coveralls": "^3.1.0",
+    "coveralls-next": "^4.2.1",
     "eslint": "^8.57.0",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-import": "^2.29.1",
